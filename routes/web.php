@@ -21,6 +21,7 @@ Route::post('password/email', [PasswordResetController::class, 'sendResetLinkEma
 Route::get('password/reset/{token}', [PasswordResetController::class, 'showResetForm'])->name('password.reset');
 Route::post('password/reset', [PasswordResetController::class, 'reset'])->name('password.update');
 
+
 // Rute untuk Auth
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);

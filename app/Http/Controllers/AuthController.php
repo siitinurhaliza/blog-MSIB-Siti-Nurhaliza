@@ -61,6 +61,6 @@ public function login(Request $request)
     public function logout()
     {
         Auth::logout();
-        return redirect()->route('login')->with('success', 'Logged out successfully');
+        return redirect()->route('frontend.home')->with('success', 'Logged out successfully');
     }
 }
